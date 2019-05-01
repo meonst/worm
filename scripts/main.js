@@ -194,60 +194,7 @@ function make_screen() {
         worm_head_y = parseInt(i / 20);
 
         if (map[i] == -1) {
-            if (change == 0) {
-                color = parseInt(Math.random() * 100);
-            }
-            
-            if (color < 100) {
-                draw.fillStyle = ('Red');
-                if (color < 80) {
-                    draw.fillStyle = ('Yellow');
-                    if (color <63) {
-                        draw.fillStyle = ('Green');
-                        if (color < 48) {
-                            draw.fillStyle = ('Lime');
-                            if (color < 34) {
-                                draw.fillStyle = ('Orange');
-                                if (color < 26) {
-                                    draw.fillStyle = ('Crimson');
-                                    if (color < 18) {
-                                        draw.fillStyle = ('Gold');
-                                        if (color < 13) {
-                                            draw.fillStyle = ('GreenYellow');
-                                            if (color < 8) {
-                                                draw.fillStyle = ('OrangeRed');
-                                                if (color < 4) {
-                                                    draw.fillStyle = ('YellowGreen');
-                                                    if (color == 0) {
-                                                        draw.fillStyle = ('MidnightBlue');
-                                                        change = 0
-                                                    }
-                                        
-                                                }
-                                    
-                                            }
-                                
-                                        }
-                            
-                                    }
-                        
-                                }
-                    
-                            }
-                
-                        }
-            
-                    }
-        
-                }
-    
-            }
-            
-
-
-
-
-
+            draw.fillStyle = ('Red');
             draw.fillRect(worm_head_x * 40 + 5, worm_head_y * 40 + 5, 30, 30);
         }
 
